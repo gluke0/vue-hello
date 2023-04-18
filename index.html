@@ -15,9 +15,11 @@
 <body>
     
     <div id="app">
-        <h1> {{ message }} </h1>
+        <h1 :class="color"> {{ message }} </h1>
+        <button @click="changeColor">cambia colore del testo</button>
 
-        <img v-bind:src="randomImage">
+        <img v-bind:src="randomImage" :class="filter" class="m-4">
+        <button @click="removeFilter">rimuovi filtro all'immagine</button>
     </div>
    
     <!-- bootstrap -->
