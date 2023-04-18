@@ -24,5 +24,17 @@ createApp({
                 this.filter = "blurred"
             }
         },
+        both(){
+            if ( this.color == "black") {
+                this.color = "red"
+            } else {
+                this.color = "black"
+            };
+            if ( this.filter == "blurred") {
+                this.filter = "noblurred"
+            } else {
+                this.filter = "blurred"
+            }
+        }
     }
 }).mount('#app')
